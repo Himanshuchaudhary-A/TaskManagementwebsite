@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Comfortaa&family=Noto+Color+Emoji&family=Space+Grotesk:wght@600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Comfortaa&family=Karma:wght@500&family=Noto+Color+Emoji&family=Space+Grotesk:wght@600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Comfortaa&family=Noto+Color+Emoji&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Noto+Color+Emoji&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+
+<body>
+  <div class="text-center">
+    <img src="logo.png" class="rounded" alt="logo">
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <main class="bg">
+    <div class="mains">
+      <p>TASK</p>
+      <p>MANAGEMENT</p>
+      <p>WEBSITE</p>
+    </div>
+    <div class="para">
+      <p>Organize your Tasks and Keep Records of it.</p>
+    </div>
+    <div class="gets">
+      <button class="btn-primary2"><a href="#task">GET STARTED</a></button>
+      <br>
+      <br>
+
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+  <section class="main2">
+    <section class="navs">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="task">TASK ASSIGNMENT SECTION</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <br>
+    <br>
+
+    <!-- code for FORM/INPUT SECTION -->
+
+    <section class="formSection" id="formdata">
+      <div class="formmain">
+        <div class="task">
+          <label for="">TASK NAME</label><br>
+          <input type="text" placeholder="DESCRIBE THE TASK NAME" id="typeText1"  autocomplete="off" required><br>
+        </div>
+        <br>
+        <div class="taskDescp">
+          <label for="">TASK DESCRIPTION</label><br>
+          <input type="text" placeholder="DESCRIBE YOUR TASK HERE" id="typeText2"  autocomplete="off" required ><br>
+        </div>
+        <br>
+        <div class="severity">
+          <label for="">SEVERITY</label>
+          <br>
+          <div class="optionsMain">
+            <select class="options" id="option_select" aria-label="Default select example" name="sev"  autocomplete="off" required >
+              <br>
+              <option value="LOW">LOW</option>
+              <option value="MODERATE">MODERATE</option>
+              <option value="HIGH">HIGH</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="assign">
+          <label for="">ASSIGNED TO</label><br>
+          <input type="text" id="typeText3"  autocomplete="off" required>
+        </div>
+      </div>
+    </section><br>
+    <section class="button-Section">
+      <div class="button-main">
+        <div class="addButton">
+          <button id="Add_btn">ADD</button>
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+    <section>
+      <div class="container-fluid2">
+        <div class="table">
+          <div id="tasknew">
+            <h3>New</h3>
+          </div>
+          <div class="cardAdd" id="cardAdd1">
+          </div>
+        </div>
+        <div class="table" id="development">
+          <div id="tasknew">
+            <h3>Development</h3>
+          </div>
+          <div id="development_data"  style ="margin-left: 20%;"></div>
+        </div>
+        <div class="table" id="qa" >
+          <div id="tasknew"">
+            <h3>QA</h3>
+          </div>
+        </div>
+        <div class="table" id="Done">
+          <div id="tasknew">
+            <h3>Done</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <div class="social-media">
+          </div>
+          <p style="font-size: medium;">Mail: himanshu.chaudhary@nirvanasolutions.com</p>
+          <br>
+          <p style="font-size: medium;"> © All Rights Reserved.</p>
+        </div>
+        <div class="right-col">
+          <h3>FOR ANY QUERY</h3>
+          <div class="border"></div>
+          <p style="font-size: medium;"></p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Enter Your Query">
+            <input type="submit" class="btn" value="submit" id="submit_btn">
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
